@@ -9,7 +9,7 @@
 }
 
 body { 
-    background: linear-gradient(45deg,#034159, #025951, #02735E);
+    background: linear-gradient(45deg,#000000, #0473a7, #024f73);
     height: 100vh;
 }
 
@@ -54,7 +54,7 @@ header .btn-contato button {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #02df61;
+    background-color: #05d4f8;
     border-radius: 12px 46px;
     cursor: pointer; /*<-- Serve para o cursor vira um dedinho quando tiver em cima do botão*/
     box-shadow: 1px 0px 10px black;
