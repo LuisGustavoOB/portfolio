@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/*ESTILO GERAL*/
 *{
     margin: 0;
     padding: 0;
@@ -17,10 +18,30 @@ body {
     max-width: 1280px;
     margin: auto;
 }
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #05d4f8;
+    border-radius: 12px 46px;
+    cursor: pointer; /*<-- Serve para o cursor vira um dedinho quando tiver em cima do botão*/
+    box-shadow: 1px 0px 10px black;
+}
+
+
 /*ESTILO DO HEADER (CABEÇALHO*/
 
 header {
     padding: 40px 4%;
+}
+
+header img { 
+        border-radius: 16px 32px;
 }
 
 header > .interface {
@@ -30,13 +51,13 @@ header > .interface {
 }
 
 header a {
-    color: rgb(139, 139, 139);
+    color: rgb(236, 233, 233);
     text-decoration: none;
 }
 
 header a:hover {
     display: inline-block;
-    color: white;
+    color: rgb(53, 247, 221);
     transform: scale(1.1); /*<-- Serve para almentar ( dar zoom ) quando passar o mouse em cima se tiver dentro do hover*/
     transition: 0.3s;
 }
@@ -50,16 +71,54 @@ header nav ul li {
     padding: 0 40px;
 }
 
-header .btn-contato button {
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #05d4f8;
-    border-radius: 12px 46px;
-    cursor: pointer; /*<-- Serve para o cursor vira um dedinho quando tiver em cima do botão*/
-    box-shadow: 1px 0px 10px black;
+.btn-contato button:hover {
+    box-shadow: 2px 2px 12px #02642c;
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
-header .btn-contato button:hover {
-    box-shadow: 2px 2px 12px #02642c;
+/*ESTILO DO TOPO DO SITE*/
+
+section.topo-do-site {
+    padding: 40px 4%;
 }
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+
+span{
+    color: #05d4f8; 
+    font-size: 60px;
+}
+
+p {
+    font-size: 20px;
+    color: #fff;
+    margin: 40px 0px;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 32px;
+    }
+}
+
+
